@@ -19,18 +19,21 @@ View more - http://magestyle.com/
 You can init the slider with `data-mage-init`:
 ```
 <div id="your-slider" class="owl-carousel" data-mage-init='{
-    "OwlCarousel": {
-      "autoPlay"          :   true,
-      "autoplayTimeout"   :   2000,
-      "loop"              :   true,
-      "items"             :   1,
-      "dots"              :   true
-    }
-}'>
-    <img src="banner-image-1.jpg" />
-    <img src="banner-image-2.jpg" />
-    <img src="banner-image-3.jpg" />
-    <img src="banner-image-4.jpg" />
+	"OwlCarousel":{
+		"items":"1",
+		"loop":"true",
+		"autoplay":"true",
+		"autoplayTimeout":"3000",
+		"autoplayHoverPause":"true",
+		"dots":"true",
+		"nav":"true"
+	}
+}
+'>
+    <div class="item"><img src="{{media url="wysiwyg/womens/womens-main.jpg"}}" alt="womens-main" /></div>
+    <div class="item"><img src="{{media url="wysiwyg/mens/mens-main.jpg"}}" alt="mens-main" /></div>
+    <div class="item"><img src="{{media url="wysiwyg/gear/gear-main.jpg"}}" alt="gear-main" /></div>
+    <div class="item"><img src="{{media url="wysiwyg/new/new-main.jpg"}}" alt="new-main" /></div>
 </div>
 ```
 ####  Template Initialization
@@ -49,11 +52,13 @@ Using x-magento-init: <br/>
      {
          "#your-slider": {
              "OwlCarousel": {
-                "autoplay"        : true,
-                "autoPlayTimeout" : 2000,
-                "loop"            : true,
-                "items"           : 1,
-                "dots"            : true
+			    "items":"1",
+			    "loop":"true",
+			    "autoplay":"true",
+			    "autoplayTimeout":"3000",
+			    "autoplayHoverPause":"true",
+			    "dots":"true",
+			    "nav":"true"
              }
          }
      }
