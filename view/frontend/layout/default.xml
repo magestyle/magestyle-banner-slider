@@ -2,5 +2,6 @@
     <head>
         <css src="Magestyle_Bannerslider::css/owl.carousel.min.css"/>
         <css src="Magestyle_Bannerslider::css/owl.theme.default.min.css"/>
+        <css src="Magestyle_Bannerslider::css/owl.theme.magestyle.css"/>
     </head>
 </page>

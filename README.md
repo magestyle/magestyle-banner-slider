@@ -18,7 +18,7 @@ View more - http://magestyle.com/
 
 You can init the slider with `data-mage-init`:
 ```
-<div id="your-slider" class="owl-carousel" data-mage-init='{
+<div id="your-slider" class="owl-carousel owl-theme" data-mage-init='{
 	"OwlCarousel":{
 		"items":"1",
 		"loop":"true",
@@ -30,10 +30,10 @@ You can init the slider with `data-mage-init`:
 	}
 }
 '>
-    <div class="item"><img src="{{media url="wysiwyg/womens/womens-main.jpg"}}" alt="womens-main" /></div>
-    <div class="item"><img src="{{media url="wysiwyg/mens/mens-main.jpg"}}" alt="mens-main" /></div>
-    <div class="item"><img src="{{media url="wysiwyg/gear/gear-main.jpg"}}" alt="gear-main" /></div>
-    <div class="item"><img src="{{media url="wysiwyg/new/new-main.jpg"}}" alt="new-main" /></div>
+<div class="item"><img src="{{media url="wysiwyg/womens/womens-main.jpg"}}" alt="womens-main" /></div>
+<div class="item"><img src="{{media url="wysiwyg/mens/mens-main.jpg"}}" alt="mens-main" /></div>
+<div class="item"><img src="{{media url="wysiwyg/gear/gear-main.jpg"}}" alt="gear-main" /></div>
+<div class="item"><img src="{{media url="wysiwyg/new/new-main.jpg"}}" alt="new-main" /></div>
 </div>
 ```
 ####  Template Initialization
@@ -42,23 +42,39 @@ Using x-magento-init: <br/>
 `<script type="text/x-magento-init">`
 
 ```
-<div id="your-slider" class="owl-carousel">
+<div id="your-slider" class="owl-carousel owl-theme">
     <img src="banner-image-1.jpg" />
     <img src="banner-image-2.jpg" />
     <img src="banner-image-3.jpg" />
     <img src="banner-image-4.jpg" />
 </div>
+
 <script type="text/x-magento-init">
      {
          "#your-slider": {
              "OwlCarousel": {
-			    "items":"1",
+			    "items":"4",
 			    "loop":"true",
 			    "autoplay":"true",
-			    "autoplayTimeout":"3000",
+			    "autoplayTimeout":"4000",
 			    "autoplayHoverPause":"true",
 			    "dots":"true",
-			    "nav":"true"
+			    "nav":"true",
+			    "responsiveClass":"true",
+                "responsive":{
+                    "0":{
+                        "items":"1"
+                    },
+                    "640":{
+                        "items":"2"
+                    },
+                    "768":{
+                        "items":"3"
+                    },
+                    "1024":{
+                        "items":"4"
+                    }
+                }
              }
          }
      }

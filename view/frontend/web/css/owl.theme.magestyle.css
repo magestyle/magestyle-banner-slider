@@ -1,0 +1,7 @@
+.block.related, .block.upsell {
+    margin: 2rem;
+}
+
+.block.related .owl-stage-outer, .block.upsell .owl-stage-outer{
+    text-align: center;
+}
