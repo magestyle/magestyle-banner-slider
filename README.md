@@ -93,3 +93,4 @@ Example: Magento_Theme/layout/default.xml
         <css src="Magestyle_Bannerslider::css/owl.theme.default.min.css" />
     </head>
 ```
+
