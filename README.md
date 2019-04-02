@@ -6,7 +6,7 @@ Using this module, you will be able to use [OwlCarousel2](https://github.com/Owl
 ## Installation
 
 ```
-composer require magestyle/banner-slider
+composer require magestyle/bannerslider
 bin/magento setup:upgrade
 ```
 
@@ -93,3 +93,4 @@ Example: Magento_Theme/layout/default.xml
         <css src="Magestyle_Bannerslider::css/owl.theme.default.min.css" />
     </head>
 ```
+
